@@ -13,6 +13,7 @@ enum34==1.1.6
 idna==2.5
 ipaddress==1.0.18
 oauthlib==2.0.1
+passlib==1.6.5
 packaging==16.8
 Paste==2.0.3
 PasteDeploy==1.5.2
