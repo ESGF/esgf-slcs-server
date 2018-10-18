@@ -31,5 +31,5 @@ urlpatterns = [
         url(r'^access_token$', oauth_views.TokenView.as_view(), name="token"),
     ])),
     # Include urls for the Online CA
-    url(r'^', include('onlineca.urls')),
+    url(r'^', include('esgf_slcs.urls')),
 ]

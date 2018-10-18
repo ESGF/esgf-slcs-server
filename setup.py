@@ -21,17 +21,6 @@ except ImportError:
 with open(os.path.join(here, 'README.md')) as f:
     README = f.read()
 
-requires = [
-    # For the time being, this is required by django_wsgi
-    'django<1.10',
-    'django-oauth-toolkit',
-    'psycopg2==2.5.2',
-    'django-wsgi',
-    'ContrailOnlineCAService',
-    'PasteDeploy',
-    'django-bootstrap3',
-]
-
 if __name__ == "__main__":
 
     setup(
@@ -52,5 +41,15 @@ if __name__ == "__main__":
         packages = find_packages(),
         include_package_data = True,
         zip_safe = False,
-        install_requires = requires,
+        install_requires = [
+            # At the moment, we are on Python 2.7, so we need to have Django <2
+            # We are also stuck on Postgresql 8, which means <1.11
+            'django<1.11',
+            # That means we need to restrict the django-oauth-toolkit version too
+            'django-oauth-toolkit<1.1.0',
+            'django-onlineca',
+            'psycopg2',
+            'django-bootstrap3',
+            'passlib',
+        ],
     )
