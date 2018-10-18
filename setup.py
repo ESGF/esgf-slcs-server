@@ -25,7 +25,7 @@ requires = [
     # For the time being, this is required by django_wsgi
     'django<1.10',
     'django-oauth-toolkit',
-    'psycopg2==2.5.2',
+    'psycopg2',
     'django-wsgi',
     'ContrailOnlineCAService',
     'PasteDeploy',
