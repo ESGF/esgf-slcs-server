@@ -18,7 +18,6 @@ passlib==1.7.1
 Paste==2.0.3
 PasteDeploy==1.5.2
 PasteScript==2.0.2
-psycopg2==2.7.1
 pycparser==2.17
 pyOpenSSL==17.0.0
 pyparsing==2.2.0
