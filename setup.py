@@ -42,13 +42,10 @@ if __name__ == "__main__":
         include_package_data = True,
         zip_safe = False,
         install_requires = [
-            # At the moment, we are on Python 2.7, so we need to have Django <2
-            # We are also stuck on Postgresql 8, which means <1.11
-            'django<1.11',
-            # That means we need to restrict the django-oauth-toolkit version too
-            'django-oauth-toolkit<1.1.0',
+            'django',
+            'django-oauth-toolkit',
             'django-onlineca',
-            'psycopg2',
+            'psycopg2-binary',
             'django-bootstrap3',
             'passlib',
         ],
