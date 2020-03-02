@@ -61,3 +61,4 @@ settings.py
 
 .idea
 docker-entrypoint.py
+.python-version
